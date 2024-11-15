@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.hide {
+    display: none;
+}
+
+.active {
+    padding: 2rem;
+}
+
 .container {
     width: 80%;
     margin: auto;

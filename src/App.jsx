@@ -5,7 +5,7 @@ function App() {
   const [active, setActive] = useState(0)
 
   function handleClick(e) {
-    const newActive = Number(e.target.getAttibute('data-index'))
+    const newActive = Number(e.target.getAttribute('data-index'))
     setActive(newActive)
   }
 
@@ -17,6 +17,10 @@ function App() {
           {codes.map((item, index) => (
             <div className="code-item" key={item.id}>
               <button onClick={handleClick} data-index={index}> {item.nome}</button>
+              <div className={active == index ? 'active' : 'hide'}>
+                <div><h2>{item.nome}</h2></div>
+                {item.descrizione}
+              </div>
             </div>
           ))}
         </div>
