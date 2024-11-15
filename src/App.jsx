@@ -5,7 +5,8 @@ function App() {
   const [active, setActive] = useState(0)
 
   function handleClick(e) {
-    const newActive = Number(e.target.getAtttibute('data-index'))
+    const newActive = Number(e.target.getAttibute('data-index'))
+    setActive(newActive)
   }
 
   return (
@@ -13,9 +14,9 @@ function App() {
       <AppHeader />
       <div className="container">
         <div className="code">
-          {linguaggi.map((item, index) => (
-            <div className="code-item" key={item - id}>
-              <button onClick={handleClick}></button>
+          {codes.map((item, index) => (
+            <div className="code-item" key={item.id}>
+              <button onClick={handleClick} data-index={index}> {item.nome}</button>
             </div>
           ))}
         </div>

@@ -3,3 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.code {
+    display: flex;
+}
+
+.code-item {
+    padding: 1rem;
+
+    button {
+        background-color: blue;
+        color: white;
+        padding: .5em.75em;
+        border: none;
+        border-radius: 3px;
+        font-size: 12px;
+
+    }
+
+}
