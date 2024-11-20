@@ -14,15 +14,24 @@
 
 .container {
     width: 80%;
+    min-height: 300px;
     margin: auto;
+    position: relative;
 }
 
 .code {
     display: flex;
 }
 
+.active {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .code-item {
     padding: 1rem;
+
 
     button {
         background-color: blue;
